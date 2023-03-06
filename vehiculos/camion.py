@@ -1,4 +1,5 @@
 import coche
+import csv
 
 class Camion(coche):
 
@@ -8,3 +9,6 @@ class Camion(coche):
 
     def __str__(self):
         return super().__str__(self)+ ", {} kg ".format(self.carga)
+    
+    def catalogar(self):
+        return "El número de ruedas son {} ".format(self.ruedas)

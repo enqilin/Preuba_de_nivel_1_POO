@@ -10,3 +10,6 @@ class Motocicleta(bicicleta):
 
     def __str__(self):
        return super().__str__(self) + ", + {} km/h, {} cc".format(self.velocidad,self.cilindrada)
+    
+    def catalogar(self):
+        return "El número de ruedas son {} ".format(self.ruedas)
